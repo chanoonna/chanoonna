@@ -2,11 +2,13 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Hi, I'm Chanoon. I am a Frontend developer.",
-  "main": "index.js",
+  "main": "./src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./configs/webpack.config.ts",
-    "build": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./configs/webpack.config.ts"
+    "build": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./configs/webpack.config.ts",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/chanoonna/portfolio/issues"
   },
-  "homepage": ".",
+  "homepage": "https://chanoonna.github.io/portfolio",
   "browserslist": {
     "development": [
       "last 2 chrome versions",
@@ -57,6 +59,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.8.6",
     "react-dev-utils": "^12.0.1",
