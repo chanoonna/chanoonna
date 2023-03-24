@@ -40,7 +40,7 @@ const webpackConfig: Configuration = {
     path: BUILD,
     pathinfo: !isProduction,
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: isProduction ? publicUrlOrPath : '/',
     clean: true,
     library: {
       type: 'umd'
