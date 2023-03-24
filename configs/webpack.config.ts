@@ -120,7 +120,8 @@ const webpackConfig: Configuration = {
     new CopyWebpackPlugin({
       patterns: [
         { from: path.join(PUBLIC, 'manifest.json'), to: 'manifest.json' },
-        { from: path.join(PUBLIC, 'favicon.ico'), to: 'favicon.ico' }
+        { from: path.join(PUBLIC, 'favicon.ico'), to: 'favicon.ico' },
+        { from: path.join(ROOT, 'CNAME'), to: 'CNAME'}
       ]
     }),
     new webpack.EnvironmentPlugin({
