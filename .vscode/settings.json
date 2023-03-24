@@ -1,0 +1,26 @@
+{
+  "files.associations": {
+    ".eslintrc": "jsonc",
+    ".prettierrc": "jsonc",
+    ".eslintignore": "ignore"
+  },
+  
+  "eslint.validate": [
+    "html",
+    "typescriptreact"
+  ],
+
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "search.exclude": {
+    ".git": true,
+    ".eslintcache": true,
+    "node_modules": true,
+    "npm-debug.log.*": true,
+    "package-lock.json": true,
+    "*.{css,sass,scss}.d.ts": true
+  }
+}

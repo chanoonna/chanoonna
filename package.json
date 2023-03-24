@@ -1,0 +1,74 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Hi, I'm Chanoon. I am a Frontend developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./configs/webpack.config.ts",
+    "build": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./configs/webpack.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanoonna/portfolio.git"
+  },
+  "author": "Chanoon Na (chanoonna@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanoonna/portfolio/issues"
+  },
+  "homepage": ".",
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "dependencies": {
+    "@types/react-dev-utils": "^9.0.11",
+    "react": "^18.2.0",
+    "react-dev-utils": "^12.0.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@types/case-sensitive-paths-webpack-plugin": "^2.1.6",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.6",
+    "sass": "^1.59.3",
+    "sass-loader": "^13.2.1",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}
