@@ -121,7 +121,7 @@ const webpackConfig: Configuration = {
       patterns: [
         { from: path.join(PUBLIC, 'manifest.json'), to: 'manifest.json' },
         { from: path.join(PUBLIC, 'favicon.ico'), to: 'favicon.ico' },
-        { from: path.join(ROOT, 'CNAME'), to: 'CNAME' }
+        { from: path.join(ROOT, 'CNAME'), to: './' }
       ]
     }),
     new webpack.EnvironmentPlugin({
