@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/chanoonna/portfolio/issues"
   },
-  "homepage": "https://chanoonna.github.io/portfolio",
+  "homepage": "https://chanoonna.github.io",
   "browserslist": {
     "development": [
       "last 2 chrome versions",
