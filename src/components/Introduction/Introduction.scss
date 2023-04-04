@@ -1,0 +1,17 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 120px);
+  width: 50%;
+}
+
+h1 {
+  font-family: 'Alkatra', cursive;
+  font-size: 4rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}

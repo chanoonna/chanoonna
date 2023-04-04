@@ -1,0 +1,96 @@
+.project {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+  white-space: nowrap;
+
+  .project-overflow-container {
+    display: flex;
+    transition: transform .5s ease-in-out;
+  }
+
+  .project-card {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+  
+    .project-card-section {
+      width: 90vw;
+      display: flex;
+
+    }
+    .left {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 5rem;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .right {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      white-space: pre-wrap;
+    }
+
+    .project-card-header {
+      h2 {
+        font-family: 'Alkatra', cursive;
+      }
+
+      h4 {
+        padding-left: 1rem;
+      }
+    }
+
+    .project-card-tasks {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      padding-left: 2rem;
+      list-style-type: none;
+    }
+    
+    .project-card-task {
+      font-weight: 400;
+      p {
+        padding-bottom: 0.5rem;
+      }
+    }
+    
+    .project-card-notable-tasks {
+      padding-left: 1rem;
+    }
+
+    .project-card-notable-task {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      padding: 0.3rem 0;
+      font-weight: 300;
+      list-style-type: none;
+    }
+  }
+
+  .project-card-stacks {
+    display: flex;
+    list-style-type: none;
+    column-gap: 1rem;
+
+    li {
+      border-radius: 25px;
+      background-color: #818a92;
+      font-size: 1rem;
+      padding: 3px 12px;
+      color: #f1ecd5;
+      white-space: pre;
+      opacity: .8;
+    }
+  }
+}

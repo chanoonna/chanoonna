@@ -1,0 +1,44 @@
+.beziered-container {
+  width: 100%;
+  &.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+  }
+}
+
+.bezier-top {
+  width: 100%;
+  background-color: rgba(235, 255, 250, 0.95);
+  clip-path: url(#bezier-top);
+  position: relative;
+  z-index: -1;
+}
+.bezier-bottom {
+  width: 100%;
+  background-color: rgba(235, 255, 250, 0.95);
+  clip-path: url(#bezier-bottom);
+  position: relative;
+  z-index: -1;
+}
+.beziered-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(235, 255, 250, 0.95);
+
+  &.height-60 { 
+    height: calc(100vh - 60px);
+  }
+  &.height-120 {
+    height: calc(100vh - 120px);
+  }
+  &.height-160 {
+    height: calc(100vh - 160px);
+  }
+  &.height-240 {
+    height: calc(100vh - 240px);
+  }
+}
