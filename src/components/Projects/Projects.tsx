@@ -11,7 +11,7 @@ export const Projects = () => {
 
   useEffect(() => {
     const handleScroll = getHandleScroll(
-      careers.length,
+      projects.length,
       'career-section',
       setCurrent
     );
@@ -24,17 +24,17 @@ export const Projects = () => {
   }, []);
 
   return (
-    <SectionContainer pages={careers.length + 2} id={ID_PROJECTS}>
+    <SectionContainer pages={projects.length + 2} id={ID_PROJECTS}>
       <BezieredContainer className="sticky" height="240">
         <div className="project" id="project">
           <div
             className="project-overflow-container"
             style={{
-              width: `${(careers.length + 2) * 100}%`,
+              width: `${(projects.length + 2) * 100}%`,
               transform: `translateX(${-(current * 100)}vw)`
             }}
           >
-            {careers.map((project) => (
+            {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
@@ -44,7 +44,7 @@ export const Projects = () => {
   );
 };
 
-const careers: IProject[] = [
+const projects: IProject[] = [
   {
     id: 1,
     title: 'Open House of Commons',
