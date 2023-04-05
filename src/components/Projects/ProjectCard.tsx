@@ -14,7 +14,11 @@ export const ProjectCard = ({ project }: { project: IProject }) => {
     <div id={project.id.toString()} className="project-card">
       <section className="project-card-section">
         <div className="left">
-          <img src={project.imageFileName} />
+          {project.imageFileName ? (
+            <img src={project.imageFileName} />
+          ) : (
+            'NO IMAGE'
+          )}
         </div>
         <div className="right">
           <header className="project-card-header">
@@ -34,15 +38,14 @@ export const ProjectCard = ({ project }: { project: IProject }) => {
               ))}
             </div>
           </header>
-          <div>
-            <p>{project.description}</p>
-          </div>
-          <p>Stacks</p>
           <ul className="project-card-stacks">
             {project.techStack.map((stack) => (
               <li key={stack}>{stack}</li>
             ))}
           </ul>
+          <div className="project-card-description">
+            <p>{project.description}</p>
+          </div>
         </div>
       </section>
     </div>

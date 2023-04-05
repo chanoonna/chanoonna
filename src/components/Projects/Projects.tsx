@@ -12,7 +12,7 @@ export const Projects = () => {
   useEffect(() => {
     const handleScroll = getHandleScroll(
       projects.length,
-      'career-section',
+      ID_PROJECTS,
       setCurrent
     );
 

@@ -4,16 +4,13 @@ import { BezieredContainer } from 'components';
 import { SectionContainer } from '../shared/SectionContainer';
 import { getHandleScroll } from '../utils';
 import { CareerCard, ICareer } from './CareerCard';
+import { ID_CAREER } from '../constants';
 
 export const Career = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const handleScroll = getHandleScroll(
-      careers.length,
-      'career-section',
-      setCurrent
-    );
+    const handleScroll = getHandleScroll(careers.length, ID_CAREER, setCurrent);
 
     window.addEventListener('scroll', handleScroll);
 
@@ -23,7 +20,7 @@ export const Career = () => {
   }, []);
 
   return (
-    <SectionContainer pages={careers.length} id="career-section">
+    <SectionContainer pages={careers.length} id={ID_CAREER}>
       <BezieredContainer className="sticky" height="240">
         <div className="career">
           <div
