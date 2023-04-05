@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(./assets/images/paris.jpg);
+  background-image: url(./assets/images/paris-low.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -17,7 +17,7 @@ body {
   overscroll-behavior-y: none;
 
   @media (max-width: 1150px) {
-    background-image: url(./assets/images/eiffel_tower.png);
+    background-image: url(./assets/images/eiffel_tower-low.jpg);
   }
 }
 
