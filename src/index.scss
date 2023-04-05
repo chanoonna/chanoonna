@@ -12,10 +12,13 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  // background-color: rgb(144, 142, 255);
 
   font-size: 16px;
   overscroll-behavior-y: none;
+
+  @media (max-width: 1150px) {
+    background-image: url(./assets/images/eiffel_tower.png);
+  }
 }
 
 #root {
