@@ -41,12 +41,11 @@
     }
 
     .project-card-header {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
       h2 {
         font-family: 'Alkatra', cursive;
-      }
-
-      h4 {
-        padding-left: 1rem;
       }
     }
 
@@ -92,5 +91,14 @@
       white-space: pre;
       opacity: .8;
     }
+  }
+
+  .github-container {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+  .github-icon-container {
+    cursor: pointer;
   }
 }

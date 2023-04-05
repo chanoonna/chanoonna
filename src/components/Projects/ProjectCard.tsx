@@ -1,3 +1,5 @@
+import { GithubIcon } from '../shared/GithubIcon';
+
 export interface IProject {
   id: number;
   title: string;
@@ -17,13 +19,20 @@ export const ProjectCard = ({ project }: { project: IProject }) => {
         <div className="right">
           <header className="project-card-header">
             <h2>{project.title}</h2>
-            <h4>
+            <div className="github-container">
               {project.githubs.map((github) => (
-                <div key={github.name}>
-                  {github.name}: {github.url}
+                <div
+                  key={github.name}
+                  title={github.name}
+                  onClick={() => {
+                    window.open(github.url, '_blank');
+                  }}
+                  className="github-icon-container"
+                >
+                  <GithubIcon />
                 </div>
               ))}
-            </h4>
+            </div>
           </header>
           <div>
             <p>{project.description}</p>
