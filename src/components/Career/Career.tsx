@@ -9,16 +9,6 @@ import { ID_CAREER } from '../constants';
 export const Career = () => {
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = getHandleScroll(careers.length, ID_CAREER, setCurrent);
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <SectionContainer pages={careers.length} id={ID_CAREER}>
       <BezieredContainer className="sticky" height="240">

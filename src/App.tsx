@@ -1,19 +1,8 @@
-import {
-  BezierEffect,
-  NavBar,
-  Introduction,
-  Career,
-  AboutMe,
-  Projects
-} from 'components';
+import { NavBar, Main } from 'components';
 
 export const App = () => (
   <div className="app-container">
     <NavBar />
-    <BezierEffect />
-    <Introduction />
-    <Career />
-    <Projects />
-    <AboutMe />
+    <Main />
   </div>
 );

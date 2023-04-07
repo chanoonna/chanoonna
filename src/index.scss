@@ -2,37 +2,37 @@
   margin: 0px;
   padding: 0px;
   border-width: 0px;
+  box-sizing: border-box;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 body {
-  background-image: url(./assets/images/paris-low.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-
   font-size: 16px;
+  background: linear-gradient(to bottom, #eef2f4, #f0eef4, #f4eeee, #f1f4ee, #f4f4ee, );
+	background-size: 100%;
+	background-repeat: no-repeat;
   overscroll-behavior-y: none;
-
-  @media (max-width: 1150px) {
-    background-image: url(./assets/images/eiffel_tower-low.jpg);
-  }
 }
 
 #root {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 500vh;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
 .app-container {
-  width: 100%;
+  width: 70vw;
+  height: 95vh;
   display: flex;
   flex-direction: column;
-  overscroll-behavior: contain;
+  background-color: #fff;
+  position: sticky;
+  top: 5vh;
+  border-radius: 25px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
 }

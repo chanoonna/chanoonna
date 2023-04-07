@@ -9,20 +9,6 @@ import { ID_PROJECTS } from '../constants';
 export const Projects = () => {
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = getHandleScroll(
-      projects.length,
-      ID_PROJECTS,
-      setCurrent
-    );
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <SectionContainer pages={projects.length + 2} id={ID_PROJECTS}>
       <BezieredContainer className="sticky" height="240">

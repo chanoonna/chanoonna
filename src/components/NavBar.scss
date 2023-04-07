@@ -1,0 +1,28 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+}
+
+.nav-name {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #838383;
+}
+
+.nav-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+.nav-item {
+  list-style-type: none;
+  font-size: 1.2rem;
+  color: #606060;
+  cursor: pointer;
+}
