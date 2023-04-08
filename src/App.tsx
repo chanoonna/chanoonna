@@ -1,8 +1,8 @@
-import { NavBar, Main } from 'components';
+import { NavBar, Introduction } from 'components';
 
 export const App = () => (
   <div className="app-container">
     <NavBar />
-    <Main />
+    <Introduction />
   </div>
 );

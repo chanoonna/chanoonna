@@ -5,6 +5,10 @@
   align-items: center;
 
   padding: 1rem 2rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-name {

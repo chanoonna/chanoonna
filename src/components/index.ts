@@ -1,5 +1,5 @@
 export { NavBar } from './NavBar';
-export { Main } from './Main';
+export { Introduction } from './Introduction';
 export {
   BezierEffect,
   BezierTop,

@@ -9,7 +9,7 @@
 
 body {
   font-size: 16px;
-  background: linear-gradient(to bottom, #eef2f4, #f0eef4, #f4eeee, #f1f4ee, #f4f4ee, );
+  background: linear-gradient(to bottom, #c8edff, #d8c4ff, #ffcaca, #e7fdd1, #ffffce, );
 	background-size: 100%;
 	background-repeat: no-repeat;
   overscroll-behavior-y: none;
@@ -36,4 +36,35 @@ body {
   border-bottom-right-radius: 0;
   overflow: hidden;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    width: 95vw;
+    height: 98vh;
+    top: 2vh;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1536px) and (min-width: 769px) {
+    width: 90vw;
+  }
+
+  @media (max-width: 1920px) and (min-width: 1537px) {
+    width: 85vw;
+  }
+
+  @media (min-width: 1921px) {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1536px) and (min-width: 769px) {
+}
+
+@media (max-width: 1920px) and (min-width: 1537px) {
+}
+
+@media (min-width: 1921px) {
 }

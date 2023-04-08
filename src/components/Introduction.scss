@@ -5,18 +5,58 @@
   align-items: center;
   row-gap: 1rem;
 
-  width: 50vw;
-  height: 60%;
+  padding-top: 10%;
+  width: 100%;
   
   h1 {
+    padding-left: 5%;
+    width: 100%;
     font-family: 'Maven Pro', sans-serif;
     font-weight: 400;
-    font-size: 6rem;
+ 
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 1535px) and (min-width: 769px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 1920px) and (min-width: 1536px) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: 1921px) {
+      font-size: 5rem;
+    }
   }
 
   h2 {
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    
+    &.role {
+      padding-left: 10%;
+    }
+    &.welcome {
+      padding-left: 15%;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 1536px) and (min-width: 769px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 1920px) and (min-width: 1537px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1921px) {
+      font-size: 3rem;
+    }
   }
 }
