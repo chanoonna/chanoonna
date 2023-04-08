@@ -5,69 +5,88 @@
   row-gap: 1rem;
   color: #212121;
 
-  padding-top: 10%;
-  padding-left: 15%;
-  
+  padding-top: 15%;
+  padding-bottom: 30%;
+  padding-left: 20%;
+
   h1 {
     font-family: 'Maven Pro', sans-serif;
-    font-weight: 400;
- 
-    @media (max-width: 768px) {
-      font-size: 2rem;
-    }
-
-    @media (max-width: 1535px) and (min-width: 769px) {
-      font-size: 3rem;
-    }
-
-    @media (max-width: 1920px) and (min-width: 1536px) {
-      font-size: 4rem;
-    }
-
-    @media (min-width: 1921px) {
-      font-size: 5rem;
-    }
+    font-weight: 400; 
   }
 
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 1536px) and (min-width: 769px) {
-      font-size: 2rem;
-    }
-
-    @media (max-width: 1920px) and (min-width: 1537px) {
-      font-size: 2.5rem;
-    }
-
-    @media (min-width: 1921px) {
-      font-size: 3rem;
-    }
   }
 
   p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #404040;
-    
-    @media (max-width: 768px) {
-      font-size: 1rem;
-    }
 
-    @media (max-width: 1536px) and (min-width: 769px) {
-      font-size: 1.5rem;
+    .prompt {
+      color: #505050;
+      animation: blinker 1s step-start 0s infinite;
+      -webkit-animation: blinker 1s step-start 0s infinite;
     }
+    @keyframes blinker {
+      50% {
+        opacity: 0.0;
+      }
+    }
+    @-webkit-keyframes blinker {
+      50% {
+        opacity: 0.0;
+      }
+    }
+  }
 
-    @media (max-width: 1920px) and (min-width: 1537px) {
+  @media (max-width: 768px) {
+    padding-left: 10%;
+
+    h1 {
       font-size: 2rem;
     }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
 
-    @media (min-width: 1921px) {
+  @media (max-width: 1535px) and (min-width: 769px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 1920px) and (min-width: 1536px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1921px) {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
       font-size: 2.5rem;
     }
   }
