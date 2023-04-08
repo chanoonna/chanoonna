@@ -18,19 +18,17 @@ body {
 #root {
   display: flex;
   width: 100vw;
-  height: 500vh;
   align-items: center;
   flex-direction: column;
 }
 
 .app-container {
-  width: 70vw;
-  height: 95vh;
+  width: 70%;
+  min-height: 100vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  position: sticky;
-  top: 5vh;
   border-radius: 25px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -38,22 +36,21 @@ body {
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 768px) {
-    width: 95vw;
-    height: 98vh;
-    top: 2vh;
+    width: 95%;
+    margin-top: 2vh;
     border-radius: 10px;
   }
 
   @media (max-width: 1536px) and (min-width: 769px) {
-    width: 90vw;
+    width: 90%;
   }
 
   @media (max-width: 1920px) and (min-width: 1537px) {
-    width: 85vw;
+    width: 85%;
   }
 
   @media (min-width: 1921px) {
-    width: 80vw;
+    width: 80%;
   }
 }
 
