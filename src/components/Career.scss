@@ -22,10 +22,10 @@
   border-radius: 10px;
 }
 
-.career-card-container {
+.career-card-list {
   display: flex;
 
-  .career-card-left {
+  .career-card-list-left {
     width: 40%;
     align-self: flex-start;
     padding-right: 5rem;
@@ -35,7 +35,7 @@
     min-height: 65vh;
   }
 
-  .career-card-right {
+  .career-card-list-right {
     width: 60%;
     list-style-type: none;
 

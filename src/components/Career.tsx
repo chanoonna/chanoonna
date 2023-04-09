@@ -1,4 +1,5 @@
 import './Career.scss';
+import { Fragment } from 'react';
 import { CAREER, ICareer } from '../data/career';
 
 export const Career = () => {
@@ -7,9 +8,9 @@ export const Career = () => {
       <h1>CAREER</h1>
       <ul className="career-list">
         {CAREER.map((career) => (
-          <li key={career.id} className="career-list-item">
+          <Fragment key={career.id}>
             <CareerCard career={career} />
-          </li>
+          </Fragment>
         ))}
       </ul>
     </section>
@@ -18,14 +19,14 @@ export const Career = () => {
 
 const CareerCard = ({ career }: { career: ICareer }) => {
   return (
-    <div className="career-card-container">
-      <div className="career-card-left">
+    <li className="career-card-list">
+      <aside className="career-card-list-left">
         <h2>{career.company}</h2>
         <h3>{career.position}</h3>
         <p>{career.period}</p>
         <div className="company-divider" />
-      </div>
-      <ul className="career-card-right">
+      </aside>
+      <ul className="career-card-list-right">
         {career.roles.map((role) => (
           <li key={role.name} className="career-card-right-role-item">
             <h3>{role.name}</h3>
@@ -41,6 +42,6 @@ const CareerCard = ({ career }: { career: ICareer }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </li>
   );
 };
