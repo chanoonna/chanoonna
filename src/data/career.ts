@@ -1,7 +1,6 @@
 export interface ICareer {
   id: number;
   company: string;
-  companyDescription: string;
   position: string;
   period: string;
   roles: {
@@ -15,8 +14,6 @@ export const CAREER: ICareer[] = [
   {
     id: 1,
     company: 'Mosaic Inc.',
-    companyDescription:
-      'Provides SAAS to help companies manage their projects, employees, and budget',
     position: 'Frontend Developer',
     period: '2021.04 - 2023.4',
     roles: [
@@ -32,7 +29,8 @@ export const CAREER: ICareer[] = [
       },
       {
         name: 'Frontend development',
-        description: 'General development work on the frontend',
+        description:
+          'Implement functionalities for data creation, modification and visualization',
         responsibilities: [
           'Develop new features and functionalities',
           'Write unit tests and create QA scenarios',
@@ -42,7 +40,8 @@ export const CAREER: ICareer[] = [
       },
       {
         name: 'Task management',
-        description: 'Manage non-feature work; bug fixes, maintenance, etc.',
+        description:
+          'Manage non-feature development: bug fixes, maintenance, etc.',
         responsibilities: [
           'Estimate the time required and complexity of the requirement',
           'Prioritize tasks and assign them to other developers'

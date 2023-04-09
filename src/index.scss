@@ -26,13 +26,10 @@ body {
   width: 70%;
   min-height: 100vh;
   margin-top: 5vh;
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
   border-radius: 25px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  overflow: hidden;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 768px) {

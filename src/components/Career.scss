@@ -1,3 +1,62 @@
 .career-container {
-  padding: 0 5%;
+  height: fit-content;
+  padding: 5rem;
+  .career-list-item {
+    list-style-type: none;
+  }
+
+  h1 {
+    margin-bottom: 30vh;
+    font-size: 3rem;
+  }
 }
+
+.career-card-container {
+  display: flex;
+
+  .career-card-left {
+    width: 40%;
+    height: 152.78px;
+    align-self: flex-start;
+
+    position: sticky;
+    top: 30vh;
+  }
+
+  .career-card-right {
+    width: 60%;
+    .career-card-right-roles {
+      list-style-type: none;
+
+      .career-card-right-role-item {
+        h3 {
+          font-size: 1.5rem;
+          color: #404040;
+        }
+        h4 {
+          font-size: 1rem;
+          color: #808080;
+          margin-bottom: 2rem;
+          font-weight: 300;
+        }
+      }
+      .career-card-right-role-item:not(:last-child) {
+        min-height: 75vh;
+      }
+      .career-card-right-role-item:last-child {
+        min-height: 60vh;
+      }
+
+      .career-card-right-responsibilities {
+        list-style-type: none;
+        color: #505050;
+        
+        p {
+          padding: 0.2rem 0;
+        }
+      }
+    }
+  }
+}
+
+
