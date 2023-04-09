@@ -4,6 +4,6 @@ export const App = () => (
   <div className="app-container">
     <NavBar />
     <Introduction />
-    {/* <Career /> */}
+    <Career />
   </div>
 );

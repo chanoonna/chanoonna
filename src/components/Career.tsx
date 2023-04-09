@@ -1,17 +1,21 @@
 import './Career.scss';
-import { CAREER } from '../data/career';
+import { CAREER, ICareer } from '../data/career';
 
 export const Career = () => {
   return (
-    <div className="career-container">
+    <section className="career-container">
       <h1>Career</h1>
-      {CAREER.map((career) => (
-        <></>
-      ))}
-    </div>
+      <ul className="career-list">
+        {CAREER.map((career) => (
+          <li key={career.id} className="career-list-item">
+            <CareerCard career={career} />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 
-const CareerCard = () => {
+const CareerCard = ({ career }: { career: ICareer }) => {
   return <div>Career Card</div>;
 };

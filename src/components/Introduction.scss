@@ -19,25 +19,53 @@
     font-weight: 400;
   }
 
+  .comment-container {
+    display: flex;
+    align-items: center;
+  }
+
   p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #404040;
+    overflow: hidden;
+    white-space: nowrap;
 
-    .prompt {
-      color: #505050;
-      animation: blinker 1s step-start 0s infinite;
-      -webkit-animation: blinker 1s step-start 0s infinite;
-    }
-    @keyframes blinker {
-      50% {
-        opacity: 0.0;
+    animation: typing 3s steps(40, end);
+    -webkit-animation: typing 3s steps(40, end);
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
       }
     }
-    @-webkit-keyframes blinker {
-      50% {
-        opacity: 0.0;
+    @-webkit-keyframes typing {
+      from {
+        width: 0;
       }
+      to {
+        width: 100%;
+      }
+    }
+  }
+
+  .prompt {
+    color: #505050;
+    animation: blinker 1s step-start 0s infinite;
+    -webkit-animation: blinker 1s step-start 0s infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  @-webkit-keyframes blinker {
+    50% {
+      opacity: 0.0;
     }
   }
 
@@ -50,7 +78,7 @@
     h2 {
       font-size: 1.5rem;
     }
-    p {
+    p,.prompt {
       font-size: 1rem;
     }
   }
@@ -62,7 +90,7 @@
     h2 {
       font-size: 2rem;
     }
-    p {
+    p,.prompt {
       font-size: 1.5rem;
     }
   }
@@ -74,7 +102,7 @@
     h2 {
       font-size: 2rem;
     }
-    p {
+    p,.prompt {
       font-size: 2rem;
     }
   }
@@ -86,7 +114,7 @@
     h2 {
       font-size: 3rem;
     }
-    p {
+    p,.prompt {
       font-size: 2.5rem;
     }
   }
