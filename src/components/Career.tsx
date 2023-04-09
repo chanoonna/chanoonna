@@ -23,24 +23,24 @@ const CareerCard = ({ career }: { career: ICareer }) => {
         <h2>{career.company}</h2>
         <h3>{career.position}</h3>
         <p>{career.period}</p>
+        <div className="company-divider" />
       </div>
-      <div className="career-card-right">
-        <ul className="career-card-right-roles">
-          {career.roles.map((role) => (
-            <li key={role.name} className="career-card-right-role-item">
-              <h3>{role.name}</h3>
-              <h4>{role.description}</h4>
-              <ul className="career-card-right-responsibilities">
-                {role.responsibilities.map((responsibility) => (
-                  <li key={responsibility}>
-                    <p>◇ {responsibility}</p>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="career-card-right">
+        {career.roles.map((role) => (
+          <li key={role.name} className="career-card-right-role-item">
+            <h3>{role.name}</h3>
+            <h4>{role.description}</h4>
+            <ul className="career-card-right-responsibilities">
+              {role.responsibilities.map((responsibility) => (
+                <li key={responsibility}>
+                  <span>◇ </span>
+                  <p>{responsibility}</p>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -10,7 +10,16 @@
     margin-bottom: 30vh;
     font-size: 3rem;
     font-weight: 500;
+    text-align: center;
   }
+}
+
+.company-divider {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #c8edff, #d8c4ff, #ffcaca, #e7fdd1, #ffffce);
+  margin-top: 1rem;
+  border-radius: 10px;
 }
 
 .career-card-container {
@@ -18,46 +27,52 @@
 
   .career-card-left {
     width: 40%;
-    height: 152.78px;
     align-self: flex-start;
+    padding-right: 5rem;
 
     position: sticky;
     top: 30vh;
+    min-height: 65vh;
   }
 
   .career-card-right {
     width: 60%;
-    .career-card-right-roles {
+    list-style-type: none;
+
+    .career-card-right-role-item {
+      min-height: 75vh;
+      h3 {
+        font-size: 1.5rem;
+        color: #404040;
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 1rem;
+        color: #808080;
+        margin-bottom: 2rem;
+        font-weight: 400;
+      }
+    }
+    .career-card-right-role-item:last-child {
+      align-self: flex-start;
+      position: sticky;
+      top: 30vh;
+      min-height: 65vh;
+    }
+
+    .career-card-right-responsibilities {
       list-style-type: none;
+      color: #505050;
 
-      .career-card-right-role-item {
-        h3 {
-          font-size: 1.5rem;
-          color: #404040;
-          font-weight: 400;
-        }
-        h4 {
-          font-size: 1rem;
-          color: #808080;
-          margin-bottom: 2rem;
-          font-weight: 400;
-        }
+      li {
+        display: flex;
+        align-items: baseline;
+        column-gap: 0.5rem;
       }
-      .career-card-right-role-item:not(:last-child) {
-        min-height: 75vh;
-      }
-      .career-card-right-role-item:last-child {
-        min-height: 60vh;
-      }
-
-      .career-card-right-responsibilities {
-        list-style-type: none;
-        color: #505050;
-        
-        p {
-          padding: 0.2rem 0;
-          font-family: 'Maven Pro', sans-serif;
-        }
+      
+      p {
+        padding: 0.2rem 0;
+        font-family: 'Maven Pro', sans-serif;
       }
     }
   }
