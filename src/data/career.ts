@@ -1,6 +1,7 @@
 export interface ICareer {
   id: number;
   company: string;
+  url: string;
   position: string;
   period: string;
   roles: {
@@ -15,7 +16,8 @@ export const CAREER: ICareer[] = [
     id: 1,
     company: 'Mosaic Inc.',
     position: 'Frontend Developer',
-    period: '2021.04 - 2023.4',
+    url: 'https://www.mosaicapp.com/',
+    period: '2021.04 - 2023.04',
     roles: [
       {
         name: 'New feature development management',

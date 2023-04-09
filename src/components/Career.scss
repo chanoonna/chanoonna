@@ -33,6 +33,11 @@
     position: sticky;
     top: 30vh;
     min-height: 65vh;
+
+    .company-name {
+      cursor: pointer;
+      color: #000096;
+    }
   }
 
   .career-card-list-right {

@@ -21,7 +21,14 @@ const CareerCard = ({ career }: { career: ICareer }) => {
   return (
     <li className="career-card-list">
       <aside className="career-card-list-left">
-        <h2>{career.company}</h2>
+        <h2
+          className="company-name"
+          onClick={() => {
+            window.open(career.url, '_blank');
+          }}
+        >
+          {career.company}
+        </h2>
         <h3>{career.position}</h3>
         <p>{career.period}</p>
         <div className="company-divider" />
