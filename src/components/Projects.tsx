@@ -6,7 +6,10 @@ import { GithubIcon } from './shared/GithubIcon';
 export const Projects = () => {
   return (
     <section className="section-container projects">
-      <h1 className="section-heading projects">PROJECTS</h1>
+      <h1 className="section-heading projects">
+        PROJECTS
+        <div className="section-heading-underline projects show" />
+      </h1>
       <ul className="section-list projects">
         {PROJECTS.map((project) => (
           <Fragment key={project.id}>
@@ -33,7 +36,7 @@ const ProjectCard = ({ project }: { project: IProject }) => {
             <GithubIcon />
           </div>
         </div>
-        <div className="project-divider" />
+        <div className="section-divider" />
         <ul className="project-stacks-container">
           {project.stacks.map((stack) => (
             <li key={stack}>{stack}</li>
@@ -41,10 +44,14 @@ const ProjectCard = ({ project }: { project: IProject }) => {
         </ul>
       </aside>
       <div className="section-card-right projects">
-        {project.imageLinks.map((imageLink, index) => (
-          <img key={index} src={imageLink} />
-        ))}
-        {project.description}
+        <div className="section-card-right-item projects image-container">
+          {project.imageLinks.map((imageLink, index) => (
+            <img key={index} src={imageLink} />
+          ))}
+        </div>
+        <div className="section-card-right-item projects description">
+          {project.description}
+        </div>
       </div>
     </li>
   );

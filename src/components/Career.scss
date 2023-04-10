@@ -1,13 +1,5 @@
-.section-heading.career {
-  border-bottom: 5px solid #c8edff;
-}
-
-.company-divider {
-  width: 100%;
-  height: 10px;
-  background: linear-gradient(to right, #c8edff, #d8c4ff, #ffcaca, #e7fdd1, #ffffce);
-  margin-top: 1rem;
-  border-radius: 10px;
+.section-heading-underline.career{
+  background-color: #c8edff;
 }
 
 .company-name {
@@ -15,8 +7,7 @@
   color: #000096;
 }
 
-.career-card-right-role-item {
-  min-height: 75vh;
+.section-card-right-item {
   h3 {
     font-size: 1.5rem;
     color: #404040;
@@ -25,15 +16,9 @@
   h4 {
     font-size: 1rem;
     color: #808080;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
   }
-}
-.career-card-right-role-item:last-child {
-  align-self: flex-start;
-  position: sticky;
-  top: 30vh;
-  min-height: 35vh;
 }
 
 .career-card-right-responsibilities {

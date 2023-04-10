@@ -5,7 +5,10 @@ import { CAREER, ICareer } from '../data/career';
 export const Career = () => {
   return (
     <section className="section-container career">
-      <h1 className="section-heading career">CAREER</h1>
+      <h1 className="section-heading career">
+        CAREER
+        <div className="section-heading-underline career show" />
+      </h1>
       <ul className="section-list career">
         {CAREER.map((career) => (
           <Fragment key={career.id}>
@@ -31,11 +34,11 @@ const CareerCard = ({ career }: { career: ICareer }) => {
         </h2>
         <h3>{career.position}</h3>
         <p>{career.period}</p>
-        <div className="company-divider" />
+        <div className="section-divider" />
       </aside>
       <ul className="section-card-right career">
         {career.roles.map((role) => (
-          <li key={role.name} className="career-card-right-role-item">
+          <li key={role.name} className="section-card-right-item career">
             <h3>{role.name}</h3>
             <h4>{role.description}</h4>
             <ul className="career-card-right-responsibilities">
