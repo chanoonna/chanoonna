@@ -15,7 +15,14 @@
   list-style-type: none;
 }
 .nav-item {
-  font-size: 1.1rem;
   color: #606060;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
