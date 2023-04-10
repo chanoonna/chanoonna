@@ -23,21 +23,22 @@ export const CAREER: ICareer[] = [
         name: 'New feature development management',
         description: 'Drive the success of ongoing feature development',
         responsibilities: [
-          'Conduct requirements analysis, write user stories, and produce frontend documentation for the backend team',
-          'Communicate with the backend team to ensure all the requirements are covered',
-          'Manage frontend tasks and prioritize them based on the importance of each functionality',
-          'Continuously reassess development progress and adjust user stories and requirements as needed'
+          'Requirement analysis',
+          'Document writing for associated teams',
+          'Prioritization of related tasks',
+          'Reassessment & adjustment of the tasks as of requirement changes'
         ]
       },
       {
         name: 'Frontend development',
         description:
-          'Implement functionalities for data creation, modification and visualization',
+          'Implement new frontend features; generally for data creation, modification and visualization',
         responsibilities: [
-          'Develop new features and functionalities',
-          'Write unit tests and create QA scenarios',
-          'Perform code reviews and provide feedback to other developers',
-          'Fix bugs and improve the overall quality of the product'
+          'New features and functionalities development',
+          'Bug fixes, quality improvements, and maintenance',
+          'Feedback to other developers',
+          'Test writing',
+          'Code reviews'
         ]
       },
       {
@@ -45,8 +46,8 @@ export const CAREER: ICareer[] = [
         description:
           'Manage non-feature development: bug fixes, maintenance, etc.',
         responsibilities: [
-          'Estimate the time required and complexity of the requirement',
-          'Prioritize tasks and assign them to other developers'
+          'Estimatimation of required time and complexity',
+          'Task prioritiztion and assignment'
         ]
       }
     ]

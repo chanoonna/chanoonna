@@ -4,9 +4,9 @@ import { CAREER, ICareer } from '../data/career';
 
 export const Career = () => {
   return (
-    <section className="career-container">
-      <h1>CAREER</h1>
-      <ul className="career-list">
+    <section className="section-container career">
+      <h1 className="section-heading career">CAREER</h1>
+      <ul className="section-list career">
         {CAREER.map((career) => (
           <Fragment key={career.id}>
             <CareerCard career={career} />
@@ -19,8 +19,8 @@ export const Career = () => {
 
 const CareerCard = ({ career }: { career: ICareer }) => {
   return (
-    <li className="career-card-list">
-      <aside className="career-card-list-left">
+    <li className="section-card-container career">
+      <aside className="section-card-left career">
         <h2
           className="company-name"
           onClick={() => {
@@ -33,7 +33,7 @@ const CareerCard = ({ career }: { career: ICareer }) => {
         <p>{career.period}</p>
         <div className="company-divider" />
       </aside>
-      <ul className="career-card-list-right">
+      <ul className="section-card-right career">
         {career.roles.map((role) => (
           <li key={role.name} className="career-card-right-role-item">
             <h3>{role.name}</h3>

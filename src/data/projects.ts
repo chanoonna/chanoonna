@@ -3,10 +3,7 @@ export interface IProject {
   name: string;
   description: string;
   imageLinks: string[];
-  githubs: {
-    name: string;
-    url: string;
-  }[];
+  github: string;
   stacks: string[];
 }
 
@@ -17,9 +14,7 @@ export const PROJECTS: IProject[] = [
     description:
       'An electron desktop application that allows users to manage their sales, inventory. Users can create, edit, and delete sales and their products. It also visualizes user data with multiple types of charts.',
     imageLinks: [],
-    githubs: [
-      { name: 'electron app', url: 'https://github.com/chanoonna/pos-app' }
-    ],
+    github: 'https://github.com/chanoonna/pos-app',
     stacks: ['typescript', 'electon', 'React', 'sqlite3', 'webpack']
   },
   {
@@ -30,16 +25,7 @@ export const PROJECTS: IProject[] = [
     imageLinks: [
       'https://github.com/csb3/open-house-of-commons/raw/543ae6128638889587b7fca3c8ce877aaabfa6fa/docs/vote-view.png?raw=true'
     ],
-    githubs: [
-      {
-        name: 'Frontend',
-        url: 'https://github.com/chanoonna/open-house-of-commons'
-      },
-      {
-        name: 'Backend',
-        url: 'https://github.com/chanoonna/open-house-of-commons-api'
-      }
-    ],
+    github: 'https://github.com/chanoonna/open-house-of-commons',
     stacks: ['React', 'chart.js', 'sass', 'node.js', 'express', 'postgresql']
   },
   {
@@ -50,12 +36,7 @@ export const PROJECTS: IProject[] = [
     imageLinks: [
       'https://raw.githubusercontent.com/chanoonna/scheduler/master/docs/bookinterview.png'
     ],
-    githubs: [
-      {
-        name: 'Frontend',
-        url: 'https://github.com/chanoonna/scheduler'
-      }
-    ],
+    github: 'https://github.com/chanoonna/scheduler',
     stacks: ['React', 'node-sass', 'jest', 'cypress', 'circleci', 'storybook']
   }
 ];

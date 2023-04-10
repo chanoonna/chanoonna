@@ -17,48 +17,5 @@ body {
 
 #root {
   display: flex;
-  width: 100vw;
-  align-items: center;
-  flex-direction: column;
-}
-
-.app-container {
-  width: 70%;
-  min-height: 100vh;
-  margin-top: 5vh;
-  background-color: #fff;
-  border-radius: 25px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: 768px) {
-    width: 95%;
-    margin-top: 2vh;
-    border-radius: 10px;
-  }
-
-  @media (max-width: 1536px) and (min-width: 769px) {
-    width: 90%;
-  }
-
-  @media (max-width: 1920px) and (min-width: 1537px) {
-    width: 85%;
-  }
-
-  @media (min-width: 1921px) {
-    width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 1536px) and (min-width: 769px) {
-}
-
-@media (max-width: 1920px) and (min-width: 1537px) {
-}
-
-@media (min-width: 1921px) {
+  justify-content: center;
 }
