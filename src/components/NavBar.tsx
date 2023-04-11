@@ -1,5 +1,5 @@
 import './NavBar.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { LinkedInIcon } from './shared/LinkedInIcon';
 import { GithubIcon } from './shared/GithubIcon';
 
@@ -21,6 +21,20 @@ export const NavBar = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollTo = (section: string) => {
+    const sectionElement = document
+      .querySelector(section)
+      ?.getBoundingClientRect();
+
+    if (sectionElement) {
+      window.scrollTo({
+        top: sectionElement.top + window.scrollY,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <nav className={'navbar-container' + (isOnTop ? ' on-top' : '')}>
       <ul className="nav-item-container left">
@@ -45,8 +59,22 @@ export const NavBar = () => {
         </li>
       </ul>
       <ul className="nav-item-container right">
-        <li className="nav-item">WORK</li>
-        <li className="nav-item">PROJECTS</li>
+        <li
+          className="nav-item"
+          onClick={() => {
+            scrollTo('.section-container.career');
+          }}
+        >
+          WORK
+        </li>
+        <li
+          className="nav-item"
+          onClick={() => {
+            scrollTo('.section-container.projects');
+          }}
+        >
+          PROJECTS
+        </li>
         <li className="nav-item">ABOUT ME</li>
         <li className="nav-item">CV</li>
         <li className="nav-item">

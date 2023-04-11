@@ -54,7 +54,7 @@ export const Projects = () => {
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (
     <li className="section-card-container projects">
-      <aside className="section-card-left project">
+      <aside className="section-card-left projects">
         <div className="project-name-container">
           <h2 className="project-name">{project.name}</h2>
           <div
@@ -74,13 +74,13 @@ const ProjectCard = ({ project }: { project: IProject }) => {
         </ul>
       </aside>
       <div className="section-card-right projects">
+        <div className="section-card-right-item projects description">
+          {project.description}
+        </div>
         <div className="section-card-right-item projects image-container">
           {project.imageLinks.map((imageLink, index) => (
             <img key={index} src={imageLink} />
           ))}
-        </div>
-        <div className="section-card-right-item projects description">
-          {project.description}
         </div>
       </div>
     </li>

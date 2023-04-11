@@ -30,7 +30,7 @@ export const Career = () => {
   return (
     <section className="section-container career">
       <h1 className="section-heading career">
-        CAREER
+        WORK
         <div
           className={
             'section-heading-underline career' +

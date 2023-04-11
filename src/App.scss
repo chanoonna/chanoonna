@@ -65,7 +65,7 @@
 
 .section-heading-underline {
   width: 0;
-  height: 10px;
+  height: 5px;
   border-radius: 5px;
   transition: width .2s;
 
@@ -77,7 +77,7 @@
 
 .section-list {
   list-style-type: none;
-  margin-top: calc(16vh - 17px);
+  margin-top: calc(16vh - 12px);
 }
 
 .section-card-container {
@@ -91,12 +91,7 @@
 
   position: sticky;
   top: 30vh;
-  min-height: 35vh;
-
-  .company-name {
-    cursor: pointer;
-    color: #000096;
-  }
+  min-height: 40vh;
 }
 
 .section-card-right {
@@ -112,6 +107,6 @@
   align-self: flex-start;
   position: sticky;
   top: 30vh;
-  min-height: 35vh;
+  min-height: 40vh;
   padding-bottom: 0;
 }

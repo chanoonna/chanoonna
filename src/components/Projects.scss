@@ -38,3 +38,14 @@
     max-width: 100%;
   }
 }
+
+.section-card-right-item.projects.description {
+  color: #404040;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.section-card-left.projects,
+.section-card-right-item.projects:last-child {
+  min-height: 80vh;
+}
