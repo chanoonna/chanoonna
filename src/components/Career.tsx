@@ -1,13 +1,42 @@
 import './Career.scss';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { CAREER, ICareer } from '../data/career';
 
 export const Career = () => {
+  const [isUnderlineEnabled, setIsUnderlineEnabled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      const careerSection = document
+        .querySelector('.section-container.career')
+        ?.getBoundingClientRect();
+
+      if (careerSection) {
+        if (
+          careerSection.top <= 150 &&
+          -careerSection.top <= careerSection.height - 150
+        ) {
+          setIsUnderlineEnabled(true);
+        } else {
+          setIsUnderlineEnabled(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <section className="section-container career">
       <h1 className="section-heading career">
         CAREER
-        <div className="section-heading-underline career show" />
+        <div
+          className={
+            'section-heading-underline career' +
+            (isUnderlineEnabled ? ' enabled' : '')
+          }
+        />
       </h1>
       <ul className="section-list career">
         {CAREER.map((career) => (

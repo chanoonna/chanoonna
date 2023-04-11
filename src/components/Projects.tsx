@@ -1,14 +1,44 @@
 import './Projects.scss';
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { PROJECTS, IProject } from '../data/projects';
 import { GithubIcon } from './shared/GithubIcon';
 
 export const Projects = () => {
+  const [isUnderlineEnabled, setIsUnderlineEnabled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      const projectSection = document
+        .querySelector('.section-container.projects')
+        ?.getBoundingClientRect();
+
+      if (projectSection) {
+        if (
+          projectSection.top <= 150 &&
+          -projectSection.top <= projectSection.height - 150
+        ) {
+          setIsUnderlineEnabled(true);
+        } else {
+          setIsUnderlineEnabled(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className="section-container projects">
       <h1 className="section-heading projects">
         PROJECTS
-        <div className="section-heading-underline projects show" />
+        <div
+          className={
+            'section-heading-underline projects' +
+            (isUnderlineEnabled ? ' enabled' : '')
+          }
+        />
       </h1>
       <ul className="section-list projects">
         {PROJECTS.map((project) => (

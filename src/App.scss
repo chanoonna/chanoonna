@@ -64,8 +64,15 @@
 }
 
 .section-heading-underline {
+  width: 0;
   height: 10px;
   border-radius: 5px;
+  transition: width .2s;
+
+  &.enabled {
+    width: 100%;
+  }
+
 }
 
 .section-list {
