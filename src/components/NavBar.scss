@@ -1,10 +1,17 @@
 .navbar-container {
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  transition: background-color .5s ease-in-out;
+  width: 90vw;
+  z-index: 5;
+
+  &:not(.on-top) {
+    background-color: #f0f0ff;
+  }
 }
 
 .nav-item-container {
