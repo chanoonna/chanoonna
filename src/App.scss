@@ -1,5 +1,6 @@
 .app-container {
-  width: 70%;
+  width: 90%;
+  max-width: 1382px;
   min-height: 100vh;
   margin-top: 5vh;
   background-color: #fff;
@@ -8,22 +9,10 @@
   border-bottom-right-radius: 0;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
 
-  @media (max-width: 768px) {
+  @media (max-width: 912px) {
     width: 95%;
     margin-top: 2vh;
     border-radius: 10px;
-  }
-
-  @media (max-width: 1536px) and (min-width: 769px) {
-    width: 90%;
-  }
-
-  @media (max-width: 1920px) and (min-width: 1537px) {
-    width: 85%;
-  }
-
-  @media (min-width: 1921px) {
-    width: 80%;
   }
 }
 
@@ -42,6 +31,10 @@
 .section-container {
   height: fit-content;
   padding: 0 5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 }
 
 .section-heading {
@@ -52,7 +45,11 @@
   font-size: 3rem;
   font-weight: 500;
   background-color: #fff;
-  z-index: 1;
+  z-index: 2;
+
+  @media (max-width: 912px) {
+    height: 16vh;
+  }
 }
 
 .section-divider {
@@ -82,6 +79,10 @@
 
 .section-card-container {
   display: flex;
+  
+  @media (max-width: 912px) {
+    flex-direction: column;
+  }
 }
 
 .section-card-left {
@@ -92,16 +93,37 @@
   position: sticky;
   top: 30vh;
   min-height: 40vh;
+
+  @media (max-width: 912px) {
+    width: 100%;
+    top: 15vh;
+    background-color: #fff;
+    min-height: fit-content;
+
+    z-index: 1;
+    padding-right: 0;
+    padding-top: 2rem;
+  }
 }
 
 .section-card-right {
   width: 60%;
   list-style-type: none;
+
+  @media (max-width: 912px) {
+    width: 100%;
+  }
 }
 
 .section-card-right-item {
   min-height: 50vh;
   padding-bottom: 30vh;
+
+  @media (max-width: 912px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: fit-content;
+  }
 }
 .section-card-right-item:last-child {
   align-self: flex-start;
@@ -109,4 +131,6 @@
   top: 30vh;
   min-height: 40vh;
   padding-bottom: 0;
+
+  z-index: 0;
 }

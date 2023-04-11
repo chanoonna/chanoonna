@@ -45,7 +45,13 @@
   line-height: 1.8;
 }
 
-.section-card-left.projects,
+.section-card-left.projects {
+  min-height: 80vh;
+
+  @media (max-width: 912px) {
+    min-height: fit-content;
+  }
+}
 .section-card-right-item.projects:last-child {
   min-height: 80vh;
 }
