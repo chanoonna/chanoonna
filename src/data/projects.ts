@@ -13,9 +13,20 @@ export const PROJECTS: IProject[] = [
     name: 'Point of sale (Ongoing)',
     description:
       'An electron desktop application that allows users to manage their sales, inventory. Users can create, edit, and delete sales and their products. It also visualizes user data with multiple types of charts.',
-    imageLinks: [],
+    imageLinks: [
+      'https://github.com/chanoonna/pos-app/blob/main/docs/Screenshot%202023-04-04%20at%204.25.53%20PM.png?raw=true',
+      'https://github.com/chanoonna/pos-app/blob/main/docs/Screenshot%202023-04-04%20at%204.26.47%20PM.png?raw=true',
+      'https://github.com/chanoonna/pos-app/blob/main/docs/Screenshot%202023-04-04%20at%204.26.57%20PM.png?raw=true'
+    ],
     github: 'https://github.com/chanoonna/pos-app',
-    stacks: ['typescript', 'electon', 'React', 'sqlite3', 'webpack']
+    stacks: [
+      'typescript',
+      'electon',
+      'React',
+      'sqlite3',
+      'webpack',
+      'material-ui'
+    ]
   },
   {
     id: 2,
@@ -37,6 +48,6 @@ export const PROJECTS: IProject[] = [
       'https://raw.githubusercontent.com/chanoonna/scheduler/master/docs/bookinterview.png'
     ],
     github: 'https://github.com/chanoonna/scheduler',
-    stacks: ['React', 'node-sass', 'jest', 'cypress', 'circleci', 'storybook']
+    stacks: ['React', 'sass', 'jest', 'cypress', 'circleci', 'storybook']
   }
 ];
