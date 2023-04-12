@@ -92,7 +92,7 @@
 
   position: sticky;
   top: 30vh;
-  min-height: 40vh;
+  min-height: 30vh;
 
   @media (max-width: 912px) {
     width: 100%;
@@ -116,8 +116,8 @@
 }
 
 .section-card-right-item {
-  min-height: 50vh;
-  padding-bottom: 30vh;
+  min-height: 30vh;
+  padding-bottom: 10vh;
 
   @media (max-width: 912px) {
     padding-top: 2rem;
@@ -129,7 +129,7 @@
   align-self: flex-start;
   position: sticky;
   top: 30vh;
-  min-height: 40vh;
+  min-height: 30vh;
   padding-bottom: 0;
 
   z-index: 0;

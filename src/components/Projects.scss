@@ -54,4 +54,8 @@
 }
 .section-card-right-item.projects:last-child {
   min-height: 80vh;
+
+  img:last-child {
+    padding-bottom: 20vh;
+  }
 }
