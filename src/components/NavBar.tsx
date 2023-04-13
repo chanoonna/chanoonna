@@ -1,5 +1,5 @@
 import './NavBar.scss';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { LinkedInIcon } from './shared/LinkedInIcon';
 import { GithubIcon } from './shared/GithubIcon';
 
@@ -83,7 +83,17 @@ export const NavBar = () => {
         >
           ABOUT ME
         </li>
-        <li className="nav-item">RÉSUMÉ</li>
+        <li
+          className="nav-item"
+          onClick={() => {
+            window.open(
+              'https://github.com/chanoonna/portfolio/raw/main/docs/Chan-oon_Na-Resume.pdf',
+              '_blank'
+            );
+          }}
+        >
+          RÉSUMÉ
+        </li>
         <li className="nav-item">
           <a href="mailto:chanoonna@gmail.com">EMAIL</a>
         </li>
