@@ -1,5 +1,5 @@
 import './App.scss';
-import { NavBar, Introduction, Career, Projects } from 'components';
+import { NavBar, Introduction, Career, Projects, AboutMe } from 'components';
 
 export const App = () => {
   return (
@@ -8,6 +8,7 @@ export const App = () => {
       <Introduction />
       <Career />
       <Projects />
+      <AboutMe />
     </div>
   );
 };

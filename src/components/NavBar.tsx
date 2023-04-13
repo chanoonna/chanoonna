@@ -75,7 +75,14 @@ export const NavBar = () => {
         >
           PROJECTS
         </li>
-        <li className="nav-item">ABOUT ME</li>
+        <li
+          className="nav-item"
+          onClick={() => {
+            scrollTo('.section-container.about-me');
+          }}
+        >
+          ABOUT ME
+        </li>
         <li className="nav-item">RÉSUMÉ</li>
         <li className="nav-item">
           <a href="mailto:chanoonna@gmail.com">EMAIL</a>

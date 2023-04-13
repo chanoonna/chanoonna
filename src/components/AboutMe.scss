@@ -1,0 +1,64 @@
+.section-container.about-me {
+  min-height: 100vh;
+}
+.section-heading-underline.about-me {
+  background-color: #ffcaca;
+}
+
+.about-me-section {
+  color: #253553;
+}
+
+.section-list.about-me {
+  position: unset;
+}
+
+.section-divider.about-me {
+  background: #0000aa;
+  height: 5px;
+  margin-top: 5px;
+}
+
+.section-card-right-item.about-me.description {
+  font-size: 1.3rem;
+}
+
+.section-card-right-item.about-me {
+  min-height: 15vh;
+}
+
+.other-experience,
+.about-me-language {
+  width: fit-content;
+  border-radius: 25px;
+  background-color: #011e61;
+  font-size: 1rem;
+  padding: 3px 12px;
+  color: #f1ecd5;
+  white-space: pre;
+  opacity: .8;
+}
+
+.section-card-right.about-me {
+  h3 {
+    font-size: 1.5rem;
+    color: #404040;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.1rem;
+    color: #808080;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.section-card-right-item.about-me.other-experiences,
+.section-card-right-item.about-me.languages {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 0.8rem;
+  margin-top: 1rem;
+  align-content: flex-start;
+}
