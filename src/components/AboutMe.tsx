@@ -74,7 +74,7 @@ export const AboutMe = () => {
   );
 };
 
-const LANGUAGES = ['Javascript', 'Typescript', 'C/C++', 'Haskell', 'Ruby'];
+const LANGUAGES = ['Javascript', 'Typescript', 'C', 'C++', 'Haskell', 'Ruby'];
 const OTHER_EXPERIENCES = [
   'React',
   'Redux',
@@ -83,6 +83,13 @@ const OTHER_EXPERIENCES = [
   'express',
   'Ruby on rails',
   'electron',
+  'material-ui',
+  'chart-js/recharts',
+  'styled-components',
   'postgresql',
-  'sqlite3'
+  'sqlite3',
+  'jest/mocha',
+  'cypress',
+  'circleci',
+  'storybook'
 ];
