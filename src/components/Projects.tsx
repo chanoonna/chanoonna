@@ -1,32 +1,10 @@
 import './Projects.scss';
-import { Fragment, useState, useEffect } from 'react';
+import { Fragment } from 'react';
 import { GithubIcon } from './shared/GithubIcon';
+import { useIsSectionEnabled } from './hooks/useIsSectionEnabled';
 
 export const Projects = () => {
-  const [isUnderlineEnabled, setIsUnderlineEnabled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      const projectSection = document
-        .querySelector('.section-container.projects')
-        ?.getBoundingClientRect();
-
-      if (projectSection) {
-        if (
-          projectSection.top <= 150 &&
-          -projectSection.top <= projectSection.height - 150
-        ) {
-          setIsUnderlineEnabled(true);
-        } else {
-          setIsUnderlineEnabled(false);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const isSectionEnabled = useIsSectionEnabled('section-container.projects');
 
   return (
     <section className="section-container projects">
@@ -35,7 +13,7 @@ export const Projects = () => {
         <div
           className={
             'section-heading-underline projects' +
-            (isUnderlineEnabled ? ' enabled' : '')
+            (isSectionEnabled ? ' enabled' : '')
           }
         />
       </h1>
