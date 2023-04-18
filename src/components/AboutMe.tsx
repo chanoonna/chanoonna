@@ -1,31 +1,8 @@
 import './AboutMe.scss';
-import { useEffect, useState } from 'react';
+import { useIsSectionEnabled } from './hooks/useIsSectionEnabled';
 
 export const AboutMe = () => {
-  const [isUnderlineEnabled, setIsUnderlineEnabled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      const aboutMeSection = document
-        .querySelector('.section-container.about-me')
-        ?.getBoundingClientRect();
-
-      if (aboutMeSection) {
-        if (
-          aboutMeSection.top <= 150 &&
-          -aboutMeSection.top <= aboutMeSection.height - 150
-        ) {
-          setIsUnderlineEnabled(true);
-        } else {
-          setIsUnderlineEnabled(false);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const isSectionEnabled = useIsSectionEnabled('section-container.about-me');
 
   return (
     <section className="section-container about-me">
@@ -34,7 +11,7 @@ export const AboutMe = () => {
         <div
           className={
             'section-heading-underline about-me' +
-            (isUnderlineEnabled ? ' enabled' : '')
+            (isSectionEnabled ? ' enabled' : '')
           }
         />
       </h1>
