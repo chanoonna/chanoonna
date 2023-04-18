@@ -62,11 +62,11 @@ const OTHER_EXPERIENCES = [
   'Ruby on rails',
   'electron',
   'material-ui',
-  'chart-js/recharts',
   'styled-components',
   'postgresql',
   'sqlite3',
-  'jest/mocha',
+  'jest',
+  'mocha',
   'cypress',
   'circleci',
   'storybook'
