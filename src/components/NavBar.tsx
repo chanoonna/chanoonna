@@ -87,7 +87,7 @@ export const NavBar = () => {
           className="nav-item"
           onClick={() => {
             window.open(
-              'https://github.com/chanoonna/portfolio/blob/main/docs/Resume-Chanoon-Na.pdf',
+              'https://github.com/chanoonna/portfolio/raw/main/docs/Resume-Chanoon-Na.pdf',
               '_blank'
             );
           }}
