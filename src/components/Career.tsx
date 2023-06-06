@@ -45,17 +45,13 @@ const CareerCard = ({ career }: { career: ICareer }) => {
         <div className="section-divider" />
       </aside>
       <ul className="section-card-right career">
-        {career.roles.map((role) => (
-          <li key={role.name} className="section-card-right-item career">
-            <h3>{role.name}</h3>
-            <h4>{role.description}</h4>
+        {career.achievements.map((achievement, index) => (
+          <li key={index} className="section-card-right-item career">
             <ul className="career-card-right-responsibilities">
-              {role.responsibilities.map((responsibility) => (
-                <li key={responsibility}>
-                  <span>◇ </span>
-                  <p>{responsibility}</p>
-                </li>
-              ))}
+              <li key={achievement}>
+                <span>◇ </span>
+                <p>{achievement}</p>
+              </li>
             </ul>
           </li>
         ))}
@@ -71,11 +67,8 @@ interface ICareer {
   url: string;
   position: string;
   period: string;
-  roles: {
-    name: string;
-    description: string;
-    responsibilities: string[];
-  }[];
+  achievements: string[];
+  skills: string[];
 }
 
 const CAREER: ICareer[] = [
@@ -86,38 +79,21 @@ const CAREER: ICareer[] = [
     position: 'Software Developer',
     url: 'https://www.mosaicapp.com/',
     period: '2021.04 - 2023.04',
-    roles: [
-      {
-        name: 'New feature development management',
-        description: 'Drive the success of ongoing feature development',
-        responsibilities: [
-          'Requirement analysis',
-          'Document writing for associated teams',
-          'Prioritization of related tasks',
-          'Reassessment & adjustment of the tasks as of requirement changes'
-        ]
-      },
-      {
-        name: 'Frontend development',
-        description:
-          'Implement new frontend features; generally for data creation, modification and visualization',
-        responsibilities: [
-          'New features and functionalities development',
-          'Bug fixes, quality improvements, and maintenance',
-          'Feedback to other developers',
-          'Test writing',
-          'Code reviews'
-        ]
-      },
-      {
-        name: 'Task management',
-        description:
-          'Manage non-feature development: bug fixes, maintenance, etc.',
-        responsibilities: [
-          'Estimatimation of required time and complexity',
-          'Task prioritiztion and assignment'
-        ]
-      }
+    achievements: [
+      'Worked on the development of the Organization Chart feature to help users visualize and structure their organization effectively. Used React-Flow and ELKJS to support auto-layout and drag-and-drop functionalities. Implemented specialized layouts for handling co-managers and applied a memoization technique to optimize performance during drag-and-drop operations.',
+      "Implemented logic to assist users in exporting or printing current charts, particularly when dealing with virtualized lists that don't typically render all elements. Introduced a mechanism to temporarily disable virtualization and render the complete list for printing purposes.",
+      'Improved efficiency in writing E2E test cases for the team by researching and documenting best practices for the Low-Code Test Automation solution Mabl. Also, created reusable code snippets for shared test steps, resulting in reduced development time.',
+      'Performed thorough security audits on sections displaying user-provided data, mitigating XSS vulnerabilities by utilizing a string escape library for proper content escaping. Additionally, addressed potential security risks by implementing permission checks in previously unchecked API calls. Rectified instances of incorrect string escaping, ensuring the correct display of content across the application.',
+      'Managed tickets to enhance team efficiency by prioritizing them based on complexity and estimated time. Achieved this by creating and linking JIRA tickets to relevant Slack messages, streamlining communication and task management processes.'
+    ],
+    skills: [
+      'Javascript',
+      'Typescript',
+      'React',
+      'Redux',
+      'Ruby on Rails',
+      'PostgreSQL',
+      'Task Management'
     ]
   }
 ];
