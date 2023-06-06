@@ -40,6 +40,7 @@ const CareerCard = ({ career }: { career: ICareer }) => {
           {career.company}
         </h2>
         <h3>{career.position}</h3>
+        <h4>{career.description}</h4>
         <p>{career.period}</p>
         <div className="section-divider" />
       </aside>
@@ -66,6 +67,7 @@ const CareerCard = ({ career }: { career: ICareer }) => {
 interface ICareer {
   id: number;
   company: string;
+  description: string;
   url: string;
   position: string;
   period: string;
@@ -80,7 +82,8 @@ const CAREER: ICareer[] = [
   {
     id: 1,
     company: 'Mosaic Inc.',
-    position: 'Frontend Developer',
+    description: 'AI-powered Project, Budget and Employee Management Solution',
+    position: 'Software Developer',
     url: 'https://www.mosaicapp.com/',
     period: '2021.04 - 2023.04',
     roles: [
