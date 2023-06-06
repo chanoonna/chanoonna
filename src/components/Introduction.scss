@@ -6,6 +6,7 @@
   row-gap: 1rem;
   color: #212121;
   height: calc(95vh - 62px);
+  padding: 5%;
 
   h1 {
     font-family: 'Maven Pro', sans-serif;
@@ -19,7 +20,8 @@
     font-size: 2rem;
   }
   p,.prompt {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #606060;
   }
 
   .comment-container {
@@ -30,29 +32,7 @@
   p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #404040;
     overflow: hidden;
-    white-space: nowrap;
-
-    animation: typing 3s steps(40, end);
-    -webkit-animation: typing 3s steps(40, end);
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-    @-webkit-keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
   }
 
   .prompt {
