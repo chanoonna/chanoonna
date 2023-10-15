@@ -29,6 +29,7 @@
   list-style-type: none;
 }
 
+.non-tech-skill,
 .other-experience,
 .about-me-language {
   width: fit-content;
@@ -55,6 +56,7 @@
   }
 }
 
+.section-card-right-item.about-me.non-tech-skills,
 .section-card-right-item.about-me.other-experiences,
 .section-card-right-item.about-me.languages {
   display: flex;

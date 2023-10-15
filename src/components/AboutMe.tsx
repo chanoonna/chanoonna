@@ -45,6 +45,14 @@ export const AboutMe = () => {
                 </li>
               ))}
             </ul>
+            <h3>Soft skills</h3>
+            <ul className="section-card-right-item about-me non-tech-skills">
+              {NON_TECH_SKILLS.map((nonTechSkill) => (
+                <li key={nonTechSkill} className="non-tech-skill">
+                  {nonTechSkill}
+                </li>
+              ))}
+            </ul>
           </div>
         </li>
       </ul>
@@ -54,10 +62,13 @@ export const AboutMe = () => {
 
 const LANGUAGES = ['Javascript', 'Typescript', 'C', 'C++', 'Haskell', 'Ruby'];
 const OTHER_EXPERIENCES = [
+  'HTML',
+  'CSS',
   'React',
   'Redux',
   'Redux-saga',
   'webpack',
+  'node.js',
   'express',
   'Ruby on rails',
   'electron',
@@ -66,8 +77,17 @@ const OTHER_EXPERIENCES = [
   'postgresql',
   'sqlite3',
   'jest',
+  'react testing library',
   'mocha',
   'cypress',
   'circleci',
   'storybook'
+];
+
+const NON_TECH_SKILLS = [
+  'Task Management',
+  'Problem Solving',
+  'Agile Development',
+  'Adaptability',
+  'Fast Learner'
 ];
