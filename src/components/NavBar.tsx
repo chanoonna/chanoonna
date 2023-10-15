@@ -83,16 +83,14 @@ export const NavBar = () => {
         >
           ABOUT ME
         </li>
-        <li
-          className="nav-item"
-          onClick={() => {
-            window.open(
-              'https://resume.creddle.io/resume/188v5khf70z',
-              '_blank'
-            );
-          }}
-        >
-          RÉSUMÉ
+        <li className="nav-item">
+          <a
+            href="https://raw.githubusercontent.com/chanoonna/portfolio/8432d47354d43aafcd54fd06b33131653d736144/src/assets/Chan-oon_Na_-_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            RÉSUMÉ
+          </a>
         </li>
         <li className="nav-item">
           <a href="mailto:chanoonna@gmail.com">EMAIL</a>
