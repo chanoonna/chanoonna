@@ -23,7 +23,7 @@ export const AboutMe = () => {
           </aside>
           <div className="section-card-right about-me">
             <p className="section-card-right-item about-me description">
-              I love solving complicated problems and building useful tools. My
+              I love solving complicate problems and building useful tools. My
               interests include automation, data processing, data visualization,
               and building tools to make development process more fun. I am
               currently working on my backend skills so that I can expand my
